@@ -47,6 +47,6 @@ write an irf/else statement for the following possibilities
 
   // test code
 
-console.log('first case', middle([1, 2]));
-console.log('second case', middle([1, 2, 3]));
-console.log('third case', middle([1, 2, 3, 4]));
+console.log('first case', middle([2, 4]));
+console.log('second case', middle([2, 4, 6]));
+console.log('third case', middle([2, 4, 6, 8]));
