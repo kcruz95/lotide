@@ -1,5 +1,8 @@
-// test/assertion fxns
+const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArrays');
 
+// test/assertion fxns
+/*
 const eqArrays = function(array1, array2) {
   let correct = true;
   if (array1.length !== array2.length) {
@@ -18,6 +21,7 @@ const eqArrays = function(array1, array2) {
       console.log(`🛑🛑🛑Assertion failed: ${actual} !== ${expected}`);
     }
   }
+*/
 
   // actual fxn
 
@@ -50,3 +54,6 @@ write an irf/else statement for the following possibilities
 console.log('first case', middle([2, 4]));
 console.log('second case', middle([2, 4, 6]));
 console.log('third case', middle([2, 4, 6, 8]));
+
+module.exports = assertEqual;
+module.exports = eqArrays;
