@@ -7,11 +7,12 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKeyByValue = function(obj, val) { //scans the obj & returns the 1st key w/ a value
-  const keyArr = Object.keys(obj); //break obj into keys and values (key:value)
+  //const keyArr = Object.keys(obj); //break obj into keys and values (key:value)
   for (let key of keyArr) {
-    if (obj[key] === val)
+    if (key === val)
       return key;
   }
+  return false;
 };
 
 const bestTVShowsByGenre = {
