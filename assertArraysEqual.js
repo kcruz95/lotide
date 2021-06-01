@@ -1,3 +1,5 @@
+const eqArrays = require('./eqArrays');
+
 const assertArraysEqual = function(arrayOne, arrayTwo) {
   if (eqArray((arrayOne, arrayTwo))) {
     console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
@@ -15,3 +17,5 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
   }
 }
 */
+
+module.exports = eqArrays;
