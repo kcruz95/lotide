@@ -10,6 +10,16 @@ const assertEqual = function(actual, expected) {
 //The function should return as TRUE if BOTH objects have identical keys & values (key:value)
 
 // const eqArrays = require('./eqArrays'); is the non eS6 version of ln 13
+const eqArrays = function(arrayOne, arrayTwo) {
+  if (arrayOne.length !== arrayTwo.length) {
+    return false;
+  } for (let i = 0; i < arrayOne.length; i++) {
+    if (arrayOne[i] !== arrayTwo[i]) {
+      return false;
+    }
+  } return true;
+};
+
 //import eqArrays from './eqArrays' is the non eS6 version of ln 13 but still unsure of how to use
 
 const eqObjects = function(object1, object2) {
@@ -35,6 +45,12 @@ const eqObjects = function(object1, object2) {
   }
 }; //console.log(Array.isArray(object1[theKey]));
 return true;
+
+//FXN IMPLEMENTTION
+
+const assertObjectsEqual = function(actual, expected) {
+  
+}
 
 /*
 const eqArrays = require('./eqArrays');//hoisted. Use to refer to ln 16 & ln 17 
