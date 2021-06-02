@@ -1,3 +1,6 @@
+const assertArraysEqual = require('./assertArraysEqual');
+const eqArray = require('./eqArray')
+
 const takeUntil = function(array, callback) {
   const result = [];
   for (let item of array) {
@@ -36,3 +39,6 @@ console.log('---');
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
+
+module.exports = assertArraysEqual;
+module.exports = eqArrays;
