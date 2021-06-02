@@ -1,3 +1,6 @@
+const assertArraysEqual = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
+/*
 const eqArrays = function(array1, array2) {
   let correct = true;
   if (array1.length !== array2.length) {
@@ -18,6 +21,7 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`🛑🛑🛑Assertion failed: ${actual} !== ${expected}`);
   }
 }
+*/
 
 //pseudocode
 /*
@@ -50,3 +54,6 @@ assertArraysEqual(eqArrays(letterPositions("hello").h, [0]), true);
 assertArraysEqual(eqArrays(letterPositions("hello").e, [1]), true);
 assertArraysEqual(eqArrays(letterPositions("hello").l, [2, 3]), true);
 assertArraysEqual(eqArrays(letterPositions("hello").o, [4]), true);
+
+module.exports = assertArraysEqual;
+module.exports = eqArrays;
