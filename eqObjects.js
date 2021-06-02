@@ -1,3 +1,7 @@
+const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArrays');
+
+/*
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
@@ -19,6 +23,7 @@ const eqArrays = function(arrayOne, arrayTwo) {
     }
   } return true;
 };
+*/
 
 //import eqArrays from './eqArrays' is the non eS6 version of ln 13 but still unsure of how to use
 
@@ -79,3 +84,6 @@ eqObjects(ab, ba); // => true
 
 const abc = { a: "1", b: "2", c: "3" };
 eqObjects(ab, abc); // => false
+
+module.exports = assertEqual;
+module.exports = eqArrays;
