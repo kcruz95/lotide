@@ -1,3 +1,7 @@
+const assertArraysEqual = require('./assertArraysEqual');
+const eqArray = require('./eqArray');
+
+/*
 const assertArraysEqual = function(arrayOne, arrayTwo) {
   if (eqArray((arrayOne, arrayTwo))) {
     console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
@@ -15,6 +19,7 @@ const eqArrays = function(arrayOne, arrayTwo) {
     }
   } return true;
 };
+*/
 
 const map = function(array, callback) {
   // console.log('array: ', array);
@@ -39,3 +44,6 @@ console.log(results1);
 const array1 = [4, 8, 16, 32];
 const map1 = array1.map(x => x / 2);
 console.log(map1);
+
+module.exports = assertEqual;
+module.exports = eqArrays;
