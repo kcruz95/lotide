@@ -20,7 +20,7 @@ module.exports = {
   head,
   tail,
   middle,
-  assertArraysEqual,
+  assertArraysEqual,  
   assertEqual,
   assertObjectsEqual,
   countLetters,
