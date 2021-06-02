@@ -1,3 +1,7 @@
+const assertArraysEqual = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
+
+/*
 const assertArraysEqual = function(arrayOne, arrayTwo) {
   if (eqArray((arrayOne, arrayTwo))) {
     console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
@@ -15,6 +19,7 @@ const eqArrays = function(arrayOne, arrayTwo) {
     }
   } return true;
 };
+*/
 
 const without = function(source, itemsToRemove) {
 let returnArray= [];
@@ -36,3 +41,6 @@ const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+
+module.exports = assertArraysEqual;
+module.exports = eqArrays;
