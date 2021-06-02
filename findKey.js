@@ -1,3 +1,6 @@
+const assertEqual = require('./assertEqual');
+
+/*
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
@@ -5,6 +8,7 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑Assertion failed: ${actual} !== ${expected}`);
   }
 }
+*/
 
 const findKey = function(object, callback) { //scans the object & callback
   for (key in object) { //loops through obj properties for a key
@@ -69,3 +73,5 @@ findKey({
   //     return key;
   //   }
   // } return undefined; //else if no key is found, the fxn will return 'undefined'
+
+  module.export = assertEqual;
